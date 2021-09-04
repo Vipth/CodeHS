@@ -1,4 +1,3 @@
 # CodeHS
 
-
-This repository will probably be on private most of the time, but if it is ever public, feel free to reference it.
+My solutions to the CodeHS lessons. Feel free to reference any code posted here.

@@ -39,6 +39,7 @@ def draw_smile():
     circle(60, 180)
     penup()
 
+# Draws a frowny face on the canvas
 def draw_frown():
     sety(-50)
     pendown()

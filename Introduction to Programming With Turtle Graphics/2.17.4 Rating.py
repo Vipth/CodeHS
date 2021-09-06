@@ -29,17 +29,17 @@ def draw_line():
     
 # Draws a green check
 def draw_check():
+    penup()
     color("green")
     pensize(10)
     speed(5)
+    backward(25)
     pendown()
-    for i in range(2):
-        forward(50)
-        backward(50)
-        right(90)
-        forward(50)
-        backward(50)
-        right(90)
+    right(45)
+    forward(25)
+    left(90)
+    forward(50)
+    penup()
 
 rating = int(input("Give me a rating between 1 and 10: "))
 

@@ -1,9 +1,9 @@
+"""
+This program draws a checkerboard with alternating red and black tiles.
+"""
 length = 40
-penup()
-speed()
-
 # Draws squares that alternate in color every other square
-def draw_color_square(color_one, color_two):
+def draw_square_row(color_one, color_two):
     for sq in range(10):
         if sq % 2 == 0:
             color_value = color_one
@@ -20,14 +20,16 @@ def draw_color_square(color_one, color_two):
         forward(length)
 
 def draw_squares():
+    speed()
+    penup()
     # Adjusts position based on the current row number.
     for row in range(10):
         setposition(-200, -200 + (row * length))
         # Fills up the canvas with colored squares
         if row % 2 == 0:
-            draw_color_square("red", "black")
+            draw_square_row("red", "black")
         else:
-            draw_color_square("black", "red")
+            draw_square_row("black", "red")
         
 draw_squares()
 sety(210)

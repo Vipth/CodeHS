@@ -1,0 +1,6 @@
+length = input("What is the length: ")
+width = input("What is the width: ")
+area = int(length) * int(width)
+perimeter = 2 * (int(length) + int(width))
+print("Area: " + str(area))
+print("Perimeter: " + str(perimeter))

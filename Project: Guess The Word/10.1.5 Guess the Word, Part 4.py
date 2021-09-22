@@ -1,7 +1,6 @@
 import random
 
-secret_words = ["Python", "JavaScript", "Java", "C", "Html", "CSS", "Ruby",\
-                ""]
+secret_words = ["Python", "JavaScript", "Java", "C", "Html", "CSS", "Ruby"]
 guesses_left = 10
 win = None
 def choice():

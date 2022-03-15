@@ -15,8 +15,7 @@ CIRCLE_RADIUS = (get_width() / NUM_CIRCLES) / 2
 
 for i in range(NUM_CIRCLES):
     circ = Circle(CIRCLE_RADIUS)
-    circ.set_position((CIRCLE_RADIUS + (CIRCLE_RADIUS * 2) * i),\
-    get_height() / 2)
+    circ.set_position((CIRCLE_RADIUS + (CIRCLE_RADIUS * 2) * i), get_height() / 2)
     if i % 2 == 0:
         color = Color.red
     else:

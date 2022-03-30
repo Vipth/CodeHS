@@ -1,4 +1,4 @@
-from random import choice
+import random
 
 set_size(480, 400)
 
@@ -13,5 +13,5 @@ COLORS = [Color.red, Color.orange, Color.yellow, Color.green, Color.blue,
 
 sq = Rectangle(SIDE_LENGTH, SIDE_LENGTH)
 sq.set_position(get_width() / 2, get_height() / 2)
-sq.set_color(choice(COLORS))
+sq.set_color(random.choice(COLORS))
 add(sq)

@@ -12,6 +12,6 @@ COLORS = [Color.red, Color.orange, Color.yellow, Color.green, Color.blue,
         
 
 sq = Rectangle(SIDE_LENGTH, SIDE_LENGTH)
-sq.set_position(get_width() / 2, get_height() / 2)
+sq.set_position((get_width() / 2) - (SIDE_LENGTH / 2), (get_height() / 2) - (SIDE_LENGTH / 2))
 sq.set_color(random.choice(COLORS))
 add(sq)
